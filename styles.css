@@ -1,15 +1,5 @@
 /* styles.css */
 
-/* Self-hosted "Press Start 2P" font */
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url('fonts/press-start-2p-v15-latin-regular.woff2') format('woff2'),
-         url('fonts/press-start-2p-v15-latin-regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 body {
     margin: 0;
     font-family: 'Press Start 2P', cursive;
