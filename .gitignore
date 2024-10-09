@@ -13,7 +13,7 @@
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
-
+*.bck
 # macOS cache files
 com.apple.timemachine.donotpresent
 .AppleDB
