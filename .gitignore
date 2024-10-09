@@ -1,0 +1,59 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# macOS cache files
+com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Vim swap files
+*.swp
+*.swo
+
+# Editor backups
+*~
+
+# Node.js dependency directory (if using Node.js or front-end tooling)
+node_modules/
+
+# Logs
+*.log
+
+# Build outputs
+dist/
+build/
+
+# Local environment variables or credentials
+.env
+.env.local
+.env.*.local
+
+# Python virtual environment (if using any Python scripts)
+venv/
+
+# Ignoring generated content
+*.lock
+*.cache
+
+# Webpack or other bundler outputs
+*.map
+
+# Dependency directories (for various package managers)
+vendor/
+bundle/
