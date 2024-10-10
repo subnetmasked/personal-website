@@ -106,3 +106,48 @@ footer p {
 .contact-info a:hover {
     color: #ff71ce;
 }
+
+#repos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.repo-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card h2 {
+    font-size: 1.5em;
+}
+
+.repo-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.repo-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.repo-info span {
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+

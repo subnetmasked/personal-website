@@ -24,10 +24,43 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Nothing is here yet</h2>
-            <p>Nothing cool to see here yet, I'm still working on it, patience please.</p>
-        </section>
+<section id="repos">
+    <div class="repo-card" data-repo="subnetmasked/sshman">
+        <h2><a href="https://github.com/subnetmasked/sshman">sshman</a></h2>
+        <p>Lightweight SSH manager with multiple features.</p>
+        <div class="repo-info">
+            <span class="language">Ruby</span>
+            <span class="stars">★ <span class="star-count">0</span></span>
+        </div>
+    </div>
+
+    <div class="repo-card" data-repo="subnetmasked/personal-website">
+        <h2><a href="https://github.com/subnetmasked/personal-website">Personal Website</a></h2>
+        <p>My custom HTML/CSS website project.</p>
+        <div class="repo-info">
+            <span class="language">HTML/CSS</span>
+            <span class="stars">★ <span class="star-count">0</span></span>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const repoCards = document.querySelectorAll('.repo-card');
+
+        repoCards.forEach(card => {
+            const repo = card.getAttribute('data-repo');
+            
+            fetch(`https://api.github.com/repos/${repo}`)
+                .then(response => response.json())
+                .then(data => {
+                    const starsElement = card.querySelector('.star-count');
+                    starsElement.textContent = data.stargazers_count;
+                })
+                .catch(error => console.error('Error fetching repo data:', error));
+        });
+    });
+</script>
     </main>
     <footer>
         <p>&copy; 2024 - このウェブサイトはコピーレフトのもとで公開されています - サブネットマスクドが愛を込めて作りました。</p>
