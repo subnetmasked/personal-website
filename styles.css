@@ -151,3 +151,42 @@ footer p {
     border-radius: 5px;
 }
 
+#web-buttons {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#web-buttons h2 {
+    font-size: 32px;
+    color: #ff71ce;
+    text-shadow: 2px 2px #05ffa1;
+}
+
+#web-buttons p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.buttons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-item {
+    width: 88px;
+    height: 31px;
+    transition: transform 0.3s;
+}
+
+.button-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.button-item:hover {
+    transform: scale(1.1);
+}
