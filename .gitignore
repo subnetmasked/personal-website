@@ -43,7 +43,7 @@ build/
 .env
 .env.local
 .env.*.local
-
+blog_env/
 # Python virtual environment (if using any Python scripts)
 venv/
 
@@ -57,3 +57,7 @@ venv/
 # Dependency directories (for various package managers)
 vendor/
 bundle/
+
+# Other
+*.sh
+
