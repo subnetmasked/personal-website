@@ -190,3 +190,56 @@ footer p {
 .button-item:hover {
     transform: scale(1.1);
 }
+
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 2em;
+    color: #ff71ce;
+    text-shadow: 2px 2px #05ffa1;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.post-title {
+    font-size: 1.5em;
+    color: #05ffa1;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.post-content {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.post-content h2, .post-content h3, .post-content h4 {
+    color: #ff71ce;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    margin-bottom: 15px;
+}
+
+.post-content code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
